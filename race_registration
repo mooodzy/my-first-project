@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration</title>
+</head>
+<body>
+    <h2>Race Registration</h2>
+    <form action="register_race.php" method="post">
+        <!-- Race registration form fields -->
+        <label for="camelId">Camel ID:</label>
+        <input type="text" id="camelId" name="camelId" required><br>
+
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="text" id="mobileNumber" name="mobileNumber" required><br>
+
+        <label for="rounds">Select Rounds:</label>
+        <select id="rounds" name="rounds" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <!-- Add more options as needed -->
+        </select><br>
+
+        <input type="submit" value="Register for Race" name="submit_race">
+    </form>
+
+    <p><a href="camel_registration.html">Register a Camel</a></p>
+</body>
+</html>
+<?php
+include 'dbconnection.php'; // Include your database connection file
+
+if (isset($_POST['submit_race'])) {
+    // Race registration logic here...
+
+    // Redirect to success page or display a message
+    header("Location: success_race.php");
+    exit();
+}
+?>

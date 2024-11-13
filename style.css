@@ -1,0 +1,48 @@
+
+
+header {
+    background-color: ;
+    color: white;
+    text-align: center;
+    padding: 1em;
+	position: relative;
+}
+
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #231709;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.container {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+	
+}
+ 
+.categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+	
+}
+ 
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+	
+}
+ 
